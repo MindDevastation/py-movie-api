@@ -1,9 +1,9 @@
 from django.db import models
 
 class Movie(models.Model):
-    title = models.CharField(max_length=200)
+    title = models.CharField(max_length=255)
     description = models.TextField()
-    duration = models.PositiveIntegerField()  # Duration in minutes
+    duration = models.PositiveIntegerField()
 
     def __str__(self):
         return self.title
